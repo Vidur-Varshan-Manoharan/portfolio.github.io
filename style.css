@@ -261,6 +261,76 @@ nav ul li a:hover::after{
         transform: translateX(0%);
     }
 }
+/*--------------------------------------------------Membership--------------------------------------------------*/
+
+#membership{
+    padding: 0 70px;
+    padding-bottom: 50px;
+}
+
+.container-m{
+    display: flex;
+    align-items: center;
+}
+.membership-list{
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+h1{
+    padding-bottom: 50px;
+}
+
+.m{
+    background: #13130c;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+}
+
+.m img{
+    width: 25%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    padding-left: 50px;
+}
+
+.m div{
+    margin-left: 20px;
+}
+
+.m h2{
+font-size: 30px;
+padding-left: 300px;
+}
+
+.m p{
+    font-size: 20px;
+    padding-left: 300px;
+    line-height: 40px;
+}
+
+.m:hover{
+    background: linear-gradient(120deg, #b92b27,#1d2671);
+    transform: translateY(-10px);
+    transition: 1s;
+}
+
+.m a{
+    font-size: 20px;
+    color:#fff;
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 300px;
+}
+.m a:hover{
+    color: #2f00ff;
+    transition: 0.5s;
+}
 
 /*---------------------------------------------------Projects------------------------------------------*/
 
@@ -580,22 +650,50 @@ form input, form textarea{
 /*-------------------------css for small screens------------------*/
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 500px){
 
     #header{
         background-image: url(sjjd.jpg);
     }
     .header{
-        margin-top: 100%;
+        margin-top: 100% 100%;
         font-size: 20px;
     }
     .header h1{
-        font-size: 40px;
+        font-size: 35px;
     }
 
+    .vidur{
+        width: 230px;
+    }
+
+    body
+    {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    box-sizing: border-box;
+    color: #fff;
+    background:#263321;
+    background-size: 300% 300%;
+    animation: color 6s ease-in-out infinite;
+    }
+    @keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 0 100%
+    }
+        100%{
+        background-position: 0 50%;
+    }
+    }
     nav .fa-solid{
         display: block;
         font-size: 30px;
+        position: absolute;
+        margin-left: 470px;
     }
 
     nav .fa-solid:hover{
@@ -608,7 +706,7 @@ form input, form textarea{
         position: fixed;
         top: 0;
         right: -200px;
-        width: 100px;
+        width: 140px;
         height: 260vh;
         padding-top: 50px;
         z-index: 2;
@@ -620,17 +718,30 @@ form input, form textarea{
     }
 
     nav ul .fa-solid{
-        position: absolute;
+        margin-left: 15px;
         top: 25px;
-        left: 25px;
+        left: 0;
         cursor: pointer;
         font-size: 30px;
     }
 
+    #about{
+        padding:80px 0;
+        color: #ababab;
+    }
+
     .about-col-2 p{
         text-align: justify;
-        line-height: 25px;
-        font-size: 16px;
+        line-height: 30px;
+        font-size: 25px;
+    }
+
+    .tab-contents ul li{
+        list-style: none;
+        margin: 10px 0;
+        font-size: 22px;
+        line-height: 28px;
+        text-align: justify;
     }
 
     .static-text{
@@ -703,9 +814,9 @@ form input, form textarea{
     
     .btn2{
     display: block;
-    margin: 50px 0;
+    margin: 50px 150px;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #e9ec18;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -715,13 +826,11 @@ form input, form textarea{
     background: none;
     }
     .btn2:hover{
-    background: #ff004f;
+    background: #b08b3b;
+    border: #b08b3b;
     cursor: pointer;
     transition: 0.5s;
-    }
-
-    .sub-title{
-        font-size: 40px;
+    
     }
 
     .about-col-1, .about-col-2{
@@ -732,25 +841,159 @@ form input, form textarea{
         margin-bottom: 30px;
     }
 
+    #membership{
+        padding: 30px 20px;
+        font-size: 20px;
+    }
+  
+    .membership-list{
+        display:grid;
+        grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin-top:50px;
+    }
+  
+    .m img{
+        width: 50%;
+        border-radius: 10px;
+        display: block;
+        transition: transform 0.5s;
+        padding-left: 30px;
+    }
+    
+    .m div{
+        margin-left: 10px;
+    }
+    
+    .m h2{
+    font-size: 30px;
+    padding-left: 10px;
+    }
+    
+    .m p{
+        font-size: 18px;
+        padding-left: 10px;
+        line-height: 40px;
+    }
+
+    .m a{
+        font-size: 18px;
+        color:#fff;
+        display: inline-block;
+        text-decoration: none;
+        padding-left: 10px;
+    }
+    
     #project{
         padding:30px 20px;
+    }
+
+    .project-list{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-gap: 40px;
+        margin-top:50px;
+    }
+    
+    .project-list div{
+        background: #13130c;
+        padding: 20px;
+        font-size: 16px;
+        font-weight: 300;
+        border-radius: 10px;
+    }
+    
+    .project-list div i{
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
+    #Certification{
+        padding: 50px 0;
+    }
+    
+    .work-list{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin-top:50px;
+    }
+    
+    .work{
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .work img{
+        width: 100%;
+        border-radius: 10px;
+        display: block;
+        transition: transform 0.5s;
     }
 
     #publications{
         padding: 30px 20px;
         font-size: 20px;
     }
-
+  
+    .publications-list{
+        display:grid;
+        grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin-top:50px;
+    }
+    
+    .publications-list div{
+        background: #13130c;
+        padding: 40px 20px;
+        font-size: 15px;
+        font-weight: 300;
+        border-radius: 10px;
+    }
+    
+    .publications-list div i{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .publications-list div p{
+        line-height: 30px;
+        font-style: italic;
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+    
+    .publications-list div a{
+        font-size: 18px;
+        color:#fff;
+        display: inline-block;
+        text-decoration: none;
+    }
+    
     #contact {
         padding: 30px 20px;
-        font-size: 30px;
+        font-size: 28px;
     }
 
+    form input, form textarea{
+        width: 90%;
+        border: 0;
+        outline: none;
+        background: #262626;
+        padding: 30px;
+        margin: 20px;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 6px;
+        display: inline-block;
+    }
 }
 
 #msg{
     color: #61b752;
     margin-top: -40px;
     display: block;
+    width: 80%;
 }
 
