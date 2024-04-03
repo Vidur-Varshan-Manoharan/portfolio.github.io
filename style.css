@@ -24,7 +24,7 @@ body
         background-position: 0 50%;
     }
     50%{
-        background-position: 0 100%
+        background-position: 0 100%;
     }
         100%{
         background-position: 0 50%;
@@ -163,7 +163,7 @@ nav ul li a:hover::after{
 /*------------------------------------------------------about--------------------------------------------- */
 
 #about{
-    padding:80px 0;
+    padding:50px 0;
     color: #ababab;
 }
 
@@ -264,14 +264,10 @@ nav ul li a:hover::after{
 /*--------------------------------------------------Membership--------------------------------------------------*/
 
 #membership{
-    padding: 0 70px;
+    padding: 30px 0;
     padding-bottom: 50px;
 }
 
-.container-m{
-    display: flex;
-    align-items: center;
-}
 .membership-list{
     font-size: 50px;
     margin-top: 20px;
@@ -335,12 +331,12 @@ padding-left: 300px;
 /*---------------------------------------------------Projects------------------------------------------*/
 
 #project{
-    padding:30px 70px;
+    padding:30px 0px;
 }
 
 .project-list{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top:50px;
 }
@@ -386,6 +382,10 @@ padding-left: 300px;
     margin-top: 20px;
     display: inline-block;
 }
+.project-list div i1{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
 
 .project-list ul{
     font-style: italic;
@@ -412,9 +412,96 @@ padding-left: 300px;
     padding: 50px 0;
 }
 
+.certi-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    grid-gap: 40px;
+    margin-top:50px;
+}
+
+.certi{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.certi img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), #31473a);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 18px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.certi:hover img{
+    transform: scale(1.1);
+}
+
+.certi:hover .layer{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn:hover{
+    background: #ff004f;
+    transition: 0.5s;
+}
+
+/*----------------------------------------Internship and Workshop--------------------------------------*/
+#Workshop{
+    padding: 50px 0;
+}
+
 .work-list{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
     grid-gap: 40px;
     margin-top:50px;
 }
@@ -447,14 +534,14 @@ padding-left: 300px;
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     transition: height 0.5s;
 }
 
 .layer h3{
     font-weight: 700;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .layer a{
@@ -493,69 +580,54 @@ padding-left: 300px;
     background: #ff004f;
     transition: 0.5s;
 }
-
-/*----------------------------------------Publication--------------------------------------*/
-
-#publications{
-    padding: 30px 70px;
-    font-size: 30px;
+/*-------------------------------------------Hobbies--------------------------------------------*/
+#Hobbies{
+    padding: 50px 0;
 }
 
-.publications-list{
-    display:grid;
-    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+.strip{
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background:linear-gradient(45deg, #913049,#f5e1e6);
+}
+
+.hob{
+    display:flex;
+    align-items: center;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 40px;
     margin-top:50px;
+    padding-left: 30px;
+    padding-bottom: 50px;
 }
 
-.publications-list div{
-    background: #13130c;
-    padding: 40px 50px;
-    font-size: 16px;
-    font-weight: 300;
-    border-radius: 10px;
+.hob img{
+    width: 30%;
+    border-radius: 20px;
+    display: block;
 }
 
-.publications-list div i{
+.hob h1{
     font-size: 40px;
-    margin-bottom: 30px;
+    padding-top: 50px;
+    margin-left: 80PX;
+    color: #f9f5ff;
 }
-
-.publications-list div p{
-    line-height: 30px;
-    font-style: italic;
-    letter-spacing: 2px;
+.hob p{
+    margin: 0;
+    font-size: 25px;
+    font-weight: 450;
+    text-align: right;
+    padding-right: 150px;
+    flex-grow: 1;
+    color: #d9dad7;
+    line-height: 35px;
 }
-
-.publications-list div a{
-    font-size: 20px;
-    color:#fff;
-    display: inline-block;
-    text-decoration: none;
-}
-.publications-list div a:hover{
-    color: #2f00ff;
-    transition: 0.5s;
-}
-
-.fa-solid.fa-up-right-from-square{
-    font-size: 20px;
-}
-a[href]{
-    margin-top: 10px;
-}
-
-.publications-list div:hover{
-    background: linear-gradient(120deg, #b92b27,#1d2671);
-    transform: translateY(-10px);
-    transition: 1s;
-}
-
-
-/*-------------------------------Contact---------------------------------*/
+/*---------------------------------------------------Contact---------------------------------------------*/
 
 #contact {
-    padding: 30px 70px;
+    padding: 50px 0px;
     font-size: 30px;
 }
 
@@ -663,7 +735,7 @@ form input, form textarea{
     letter-spacing: 2px;
 }
 
-/*-------------------------css for small screens------------------*/
+/*-------------------------------------------css for small screens-----------------------------------------*/
 
 
 @media only screen and (max-width: 500px){
@@ -691,20 +763,21 @@ form input, form textarea{
     box-sizing: border-box;
     color: #fff;
     background:#263321;
-    background-size: 300% 300%;
-    animation: color 6s ease-in-out infinite;
+    background-size: 100% 100%;
+    animation: color 6s linear infinite;
     }
     @keyframes color{
     0%{
         background-position: 0 50%;
     }
     50%{
-        background-position: 0 100%
+        background-position: 0 100%;
     }
-        100%{
+    100%{
         background-position: 0 50%;
     }
     }
+
     nav .fa-solid{
         display: block;
         font-size: 30px;
@@ -740,7 +813,7 @@ form input, form textarea{
         cursor: pointer;
         font-size: 30px;
     }
-
+/*--------------------------------------------------about------------------------------------------------*/
     #about{
         padding:80px 0;
         color: #ababab;
@@ -856,7 +929,7 @@ form input, form textarea{
     .about-col-1{
         margin-bottom: 30px;
     }
-
+/*---------------------------------------------------membership-----------------------------------*/
     #membership{
         padding: 0 20px;
         font-size: 20px;
@@ -900,14 +973,14 @@ form input, form textarea{
         text-decoration: none;
         padding-left: 10px;
     }
-    
+ /*-------------------------------------------project---------------------------------------------------*/   
     #project{
         padding:30px 20px;
     }
 
     .project-list{
         display:grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
         grid-gap: 40px;
         margin-top:50px;
     }
@@ -924,14 +997,25 @@ form input, form textarea{
         font-size: 50px;
         margin-bottom: 30px;
     }
-
+/*----------------------------------------------------------certification------------------------------*/
     #Certification{
+        padding: 50px 0;
+    }
+    
+    .certi-list{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 40px;
+        margin-top:50px;
+    }
+/*------------------------------------------------------workshop-------------------------------*/
+    #Workshop{
         padding: 50px 0;
     }
     
     .work-list{
         display:grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-gap: 40px;
         margin-top:50px;
     }
@@ -948,46 +1032,49 @@ form input, form textarea{
         display: block;
         transition: transform 0.5s;
     }
-
-    #publications{
-        padding: 30px 20px;
-        font-size: 20px;
+/*------------------------------------------------Hobbies---------------------------------*/
+    #Hobbies{
+        padding: 50px 0;
     }
-  
-    .publications-list{
-        display:grid;
-        grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+    
+    .strip{
+        display: block;
+        width: 100%;
+        height: 1.1px;
+        background:linear-gradient(45deg, #913049,#f5e1e6);
+    }
+    .hob{
+        display:flex;
+        align-items: center;
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
         grid-gap: 40px;
         margin-top:50px;
+        padding-left: 10px;
+        padding-bottom: 20px;
     }
     
-    .publications-list div{
-        background: #13130c;
-        padding: 40px 20px;
-        font-size: 15px;
-        font-weight: 300;
-        border-radius: 10px;
+    .hob img{
+        width: 35%;
+        border-radius: 20px;
+        display: block;
     }
-    
-    .publications-list div i{
-        font-size: 40px;
-        margin-bottom: 30px;
+
+    .hob h1{
+    font-size: 18px;
+    padding-top: 50px;
+    margin-left: 0PX;
+    color: #f9f5ff;
     }
-    
-    .publications-list div p{
-        line-height: 30px;
-        font-style: italic;
-        letter-spacing: 2px;
-        font-size: 20px;
+    .hob p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 450;
+    text-align: right, justify;
+    padding-right: 5px;
+    flex-grow: 1;
+    color: #d9dad7;
     }
-    
-    .publications-list div a{
-        font-size: 18px;
-        color:#fff;
-        display: inline-block;
-        text-decoration: none;
-    }
-    
+/*----------------------------------------------------contacts------------------------------*/
     #contact {
         padding: 30px 20px;
         font-size: 28px;
