@@ -404,7 +404,91 @@ padding-left: 300px;
     transition: 0.5s;
 }
 
-/*------------------------------------------------design------------------------------------------------*/
+/*------------------------------------------------Skills------------------------------------------------*/
+
+#skills{
+    padding: 50px 0;
+}
+
+.containers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem
+}
+
+.skill-box{
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
+    text-align: justify;
+}
+
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    text-align: justify;
+}
+
+.skill-title:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #2ecc71;
+}
+
+.skill-title:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #2ecc71;
+}
+
+.img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 90px;
+    background: rgba(100, 100, 100, 0.5);
+    border-radius: 45px 0 0 45px;
+}
+.skill-title h2{
+    color: #fff;
+    margin-top: 0.5rem;
+}
+.skill-icon{
+    width: 50px;
+    z-index: 2;
+}
 
 /*----------------------------------certification--------------------------------------------*/
 
@@ -819,11 +903,22 @@ form input, form textarea{
         color: #ababab;
     }
 
+    .row{
+        display:block;
+        padding: 0 10px 0 10px;
+    }
+
+    .about-col-2{
+        flex-basis: 100%;
+    }
+
     .about-col-2 p{
         text-align: justify;
         line-height: 30px;
         font-size: 25px;
     }
+
+    
 
     .tab-contents ul li{
         list-style: none;
@@ -929,6 +1024,31 @@ form input, form textarea{
     .about-col-1{
         margin-bottom: 30px;
     }
+
+/*---------------------------------------------------Skills-------------------------------------------------*/
+
+#skills{
+    padding:0px 0;
+}
+
+.containers{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 0px;
+    font-size: 1.2rem
+}
+
+.skill-box{
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
+    text-align: center;
+}
+
 /*---------------------------------------------------membership-----------------------------------*/
     #membership{
         padding: 0 20px;
@@ -1004,10 +1124,52 @@ form input, form textarea{
     
     .certi-list{
         display:grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
         grid-gap: 40px;
         margin-top:50px;
     }
+
+    
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), #31473a);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 15px;
+    text-align: center;
+    font-size: 18px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.layer p{
+    font-size: 14px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    font-size: 12px;
+    text-decoration: none;
+    line-height: 30px;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
 /*------------------------------------------------------workshop-------------------------------*/
     #Workshop{
         padding: 50px 0;
@@ -1031,6 +1193,48 @@ form input, form textarea{
         border-radius: 10px;
         display: block;
         transition: transform 0.5s;
+    }
+
+    .layer{
+        width: 100%;
+        height: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), #31473a);
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 15px;
+        text-align: center;
+        font-size: 18px;
+        transition: height 0.5s;
+    }
+    
+    .layer h3{
+        font-weight: 500;
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+    
+    .layer p{
+        font-size: 14px;
+        margin: -10px;
+    }
+    .layer a{
+        margin-top: 20px;
+        color: #ff004f;
+        font-size: 12px;
+        text-decoration: none;
+        line-height: 30px;
+        background: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        text-align: center;
     }
 /*------------------------------------------------Hobbies---------------------------------*/
     #Hobbies{
