@@ -172,7 +172,7 @@ nav ul li a:hover::after{
 }
 
 .prog-col-1{
-    flex-basis: 55%;
+    flex-basis: 35%;
 }
 
 .prog-col-1 img{
