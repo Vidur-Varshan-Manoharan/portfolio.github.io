@@ -160,6 +160,34 @@ nav ul li a:hover::after{
     }
 }
 
+/*--------------------------------------------------current progress----------------------------------------------*/
+#currentprogress{
+    padding: 80px 0;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.prog-col-1{
+    flex-basis: 35%;
+}
+
+.prog-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.prog-col-2{
+    flex-basis: 60%;
+}
+.prog-col-2 p{
+    text-align: justify;
+    line-height: 25px;
+    font-size: 20px;
+    color: #ababab;
+}
 /*------------------------------------------------------about--------------------------------------------- */
 
 #about{
@@ -260,72 +288,6 @@ nav ul li a:hover::after{
     to{
         transform: translateX(0%);
     }
-}
-/*--------------------------------------------------Membership--------------------------------------------------*/
-
-#membership{
-    padding: 30px 0;
-    padding-bottom: 50px;
-}
-
-.membership-list{
-    font-size: 50px;
-    margin-top: 20px;
-}
-
-h1{
-    padding-bottom: 50px;
-}
-
-.m{
-    background: #13130c;
-    font-size: 16px;
-    font-weight: 400;
-    border-radius: 10px;
-    padding: 50px 0;
-    display: flex;
-    align-items: center;
-}
-
-.m img{
-    width: 25%;
-    border-radius: 10px;
-    display: block;
-    transition: transform 0.5s;
-    padding-left: 50px;
-}
-
-.m div{
-    margin-left: 20px;
-}
-
-.m h2{
-font-size: 30px;
-padding-left: 300px;
-}
-
-.m p{
-    font-size: 20px;
-    padding-left: 300px;
-    line-height: 40px;
-}
-
-.m:hover{
-    background: linear-gradient(120deg, #b92b27,#1d2671);
-    transform: translateY(-10px);
-    transition: 1s;
-}
-
-.m a{
-    font-size: 20px;
-    color:#fff;
-    display: inline-block;
-    text-decoration: none;
-    padding-left: 300px;
-}
-.m a:hover{
-    color: #2f00ff;
-    transition: 0.5s;
 }
 
 /*---------------------------------------------------Projects------------------------------------------*/
@@ -707,6 +669,17 @@ padding-left: 300px;
     flex-grow: 1;
     color: #d9dad7;
     line-height: 35px;
+    display: block;
+}
+
+.hob a{
+    font-size: 20px;
+    color: #d9dad7;
+    text-decoration: none;
+}
+.hob a:hover{
+    color: #2f00ff;
+    transition: 0.5s;
 }
 /*---------------------------------------------------Contact---------------------------------------------*/
 
@@ -897,6 +870,7 @@ form input, form textarea{
         cursor: pointer;
         font-size: 30px;
     }
+
 /*--------------------------------------------------about------------------------------------------------*/
     #about{
         padding:80px 0;
@@ -1049,74 +1023,69 @@ form input, form textarea{
     text-align: center;
 }
 
-/*---------------------------------------------------membership-----------------------------------*/
-    #membership{
-        padding: 0 20px;
-        font-size: 20px;
-    }
+.eprt-container {
+    width: 100%; /* Adjust as needed */
+    height: 500px; /* Adjust as needed */
+    border: 1px solid #ccc; /* Optional: Add a border */
+}
 
-    .membership-list{
-        display:grid;
-        grid-template-rows: repeat(auto-fit, minmax(10px, 1fr));
-        grid-gap: 40px;
-        margin-top:10px;
-    }
-  
+.switch{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+}
 
-    .m img{
-        width: 50%;
-        border-radius: 10px;
-        display: block;
-        transition: transform 0.5s;
-        padding-left: 30px;
-    }
-    
-    .m div{
-        margin-left: 10px;
-    }
-    
-    .m h2{
-    font-size: 30px;
-    padding-left: 10px;
-    }
-    
-    .m p{
-        font-size: 18px;
-        padding-left: 10px;
-        line-height: 40px;
-    }
+.switch input{
+    appearance: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background: #2ecc71;
+    outline: none;
+}
 
-    .m a{
-        font-size: 18px;
-        color:#fff;
-        display: inline-block;
-        text-decoration: none;
-        padding-left: 10px;
-    }
- /*-------------------------------------------project---------------------------------------------------*/   
-    #project{
-        padding:30px 20px;
-    }
+.switch input::before,
+.switch input::after{
+    z-index: 2;
+    position: absolute;
+    top: 56%;
+    transform: translate(-50%);
+    font-weight: bolder;
+}
 
-    .project-list{
-        display:grid;
-        grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
-        grid-gap: 40px;
-        margin-top:50px;
-    }
-    
-    .project-list div{
-        background: #13130c;
-        padding: 20px;
-        font-size: 16px;
-        font-weight: 300;
-        border-radius: 10px;
-    }
-    
-    .project-list div i{
-        font-size: 50px;
-        margin-bottom: 30px;
-    }
+.switch input::before{
+    content: "SKILLS";
+    left: 20px;
+}
+
+.switch input::after{
+    content: MY DESIGNS;
+    right:20px;
+}
+
+.switch input:checked{
+    background: #2f00ff;
+}
+
+.switch lable{
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    bottom: 4px;
+    border-radius: 20px;
+}
+
+.switch input {
+    transition: 0.25s;
+}
+
+.switch input:checked::after,
+.switch input:checked::before{
+    color: #fff;
+    transition: color 0.5s;
+}
+
 /*----------------------------------------------------------certification------------------------------*/
     #Certification{
         padding: 50px 0;
@@ -1277,6 +1246,16 @@ form input, form textarea{
     padding-right: 5px;
     flex-grow: 1;
     color: #d9dad7;
+    }
+
+    .hob a{
+        font-size: 10px;
+        color: #d9dad7;
+        text-decoration: none;
+    }
+    .hob a:hover{
+        color: #2f00ff;
+        transition: 0.5s;
     }
 /*----------------------------------------------------contacts------------------------------*/
     #contact {
