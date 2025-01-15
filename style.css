@@ -15,8 +15,8 @@ body
     padding: 0;
     box-sizing: border-box;
     color: #fff;
-    background:linear-gradient(45deg,#263321,#13130c,#161122,#5E2A2A);
-    background-size: 300% 300%;
+    background:linear-gradient(45deg,#0f0f0a,#1e2d24,#14152a,#4b1f1f);
+    background-size: 400% 400%;
     animation: color 6s ease-in-out infinite;
 }
 @keyframes color{
@@ -63,6 +63,7 @@ nav{
 .vidur{
     width: 340px;
 }
+
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -74,21 +75,23 @@ nav ul li a{
         text-decoration: none;
         font-size: 18px;
         position: relative;
+        display: block;
 }
 
 nav ul li a::after{
     content:'';
     width:0%;
-    height: 3px;
+    height: 5px;
     background: #dbec09;
     position: absolute;
+    border-radius: 10px;
     left: 0;
     bottom: -6px;
     transition: 0.5s;
 }
 
 nav ul li a:hover::after{
-    width: 100%;
+    width: 110%;
 }
 
 .header{
@@ -242,7 +245,8 @@ nav ul li a:hover::after{
 .tab-links::after{
     content: '';
     width: 0;
-    height: 3px;
+    height: 5px;
+    border-radius: 10px;
     background: #e9ec18;
     position: absolute;
     left: 0;
