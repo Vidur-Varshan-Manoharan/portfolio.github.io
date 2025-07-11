@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio - Vidur Varshan Manoharan</title>
+    <link rel="stylesheet" href="design.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://kit.fontawesome.com/58934e4ab9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">VIDUR .</div>
+        <div>
+            <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#designworks">My Design</a></li>
+                   <!-- <li><a href="#buy">Buy</a></li> -->
+                    <li><a href="#contact">Contact</a></li>                        
+                </ul>
+            </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">VIDUR .</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#designworks" onclick="toggleMenu()">My Designs</a></li>
+                <!-- <li><a href="#buy" onclick="toggleMenu()">Buy</a></li>  --> 
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="VIDUR  ..jpg"alt="VIDUR profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text_p1">Hello, I'm</p>
+            <h1 class="title">VIDUR MANOHARAN</h1>
+            <ul class="dynamic-text">
+                <li><span>Mechanical Engineer</span></li>
+                <li><span>Systems Engineer</span></li>
+                <li><span>Lean Engineer</span></li>
+                <li><span>Cost Engineer</span></li>
+            </ul>
+            <p class="section__text_p2">Welcome To My Design Portfolio</p>
+            <div class="btn-container">
+                <a href="https://vidur-varshan-manoharan.github.io/portfolio.github.io/" download class="btn btn-color-3">Personal Profile</a>
+                <a href="Vidur Varshan Manoharan CV.pdf" download class="btn btn-color-2">Download CV</a>
+            </div>
+            <div class="social-containers">
+                <a href="https://www.linkedin.com/in/vidur-varshan-manoharan"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h1 class="title">About Me</h1>
+        <div class="abt">
+            <div class="section__pic-containers">
+               <img src="documents.gif" alt="Profile picture" class="about-pic"> 
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="boiling-flask.gif" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>2+ years</p>
+                    </div>
+                    
+                    <div class="details-container">
+                        <img src="graduation.gif" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>🎓 Masters in Engineering Management<br><br> 🎓 Bachelors in Mechanica Engineering</p>
+                    </div>
+
+                     <div class="details-container">
+                        <img src="Skills.gif" alt="Skills icon" class="icon">
+                        <h3>Skills</h3>
+                        <p>🧠 Autodesk Fusion 360<br>🧠 SolidWorks<br>🧠 AutoCAD<br>🧠 3D-Printing</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="abt-picture">
+            <div class="printer-container">
+                <br><br>
+                <h4>My 3D Printer - Bambu Labs A1 with AMS</h4>
+                <br><br>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As a 3D printing enthusiast, I find excitement in bringing digital designs to life using my Bambu Labs A1 with AMS. Beyond personal projects, I actively use the printer as a hands-on learning tool to explore the principles of design for manufacturing (DFM), rapid prototyping, and material performance. This self-driven exploration allows me to iterate on real-world engineering ideas, enhance my CAD and additive manufacturing skills, and deepen my understanding of lean design. Through building functional tools and customized products, I bridge my academic knowledge with practical application, continuously expanding my capabilities as an engineer. <br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here are some of the 3D printing designs I've created as part of my self-learning journey — scroll down to explore them.</p>
+            </div>
+                <img src="bambu a1.jpg" alt="printer" class="printer-pic">
+            </div>
+    </section>
+
+    <section id="designworks">
+        <h1 class="title">My Designs</h1>
+            <div class="container">
+                <ul class="design-list">
+
+                    <li class="design">
+                        <img src="blade.png">
+                        <h1>
+                            <span>Utility Knife</span>
+                        </h1>
+                        <P>A durable, ergonomic utility knife designed and 3D printed for everyday use. Created to explore functional product design and the durability of PLA, this project helped me refine my understanding of mechanical joints, blade safety integration, and real-world prototyping using Fusion 360.</P>
+                    </li>
+                    <input type="checkbox" id="check-1">
+                    <label for="check-1">Explore More</label> 
+                    <div class="content">
+                        <section class="img-container">
+                            <div class="slider-wrapper1">
+                                <div class="slider1">
+                                    <img id="slider-1" src="Blade img 1.png" alt="3D rendered top view of the knife">
+                                    <img id="slider-2" src="Blade img 2.png" alt="3D rendered bottom view of the knife">
+                                </div>
+                                <div class="slider-nav1">
+                                    <a href="#slider-1"></a>
+                                    <a href="#slider-2"></a>
+                                </div>
+                            </div>
+                        </section>
+                    </div> 
+                    <br>
+                    <div class="strip"></div>
+
+                    <li class="design">
+                        <img src="Horn Stand.png">
+                        <h1>
+                            <span>Vikings Horn Holder</span>
+                        </h1>
+                        <P>A customized display stand engineered to showcase a Viking-themed horn. This design combined aesthetics with structural integrity and was created to experiment with artistic styling, symmetry, and part stability in 3D prints.</P>
+                    </li>
+                    <input type="checkbox" id="check-2">
+                    <label for="check-2">Explore More</label> 
+                    <div class="content">
+                        <section class="img-container">
+                            <div class="slider-wrapper2">
+                                <div class="slider2">
+                                    <img id="slide-1" src="Base.png" alt="3D rendered base of the Horn Holder">
+                                    <img id="slide-2" src="Upper Stand.png" alt="3D rendered upper stand of the Horn Holder">
+                                    <img id="slide-3" src="Lower Stand.png" alt="3D rendered lower stand of the Horn Holder">
+                                </div>
+                                <div class="slider-nav2">
+                                    <a href="#slide-1"></a>
+                                    <a href="#slide-2"></a>
+                                    <a href="#slide-3"></a>
+                                </div>
+                            </div>
+                        </section>
+                    </div> 
+                    <br>
+                              <div class="strip"></div>
+
+                    <li class="design">
+                        <img src="insu 1.jpg">
+                        <h1>
+                            <span>Insulin Pen Portable Case</span>
+                        </h1>
+                        <P>A protective, travel-friendly case designed specifically for the Allstar insulin pen. This project focused on user-centric design, optimizing internal fit, snap-fit features, and print orientation to ensure strength, accessibility, and compactness.</P>
+                    </li>
+                    <input type="checkbox" id="check-3">
+                    <label for="check-3">Explore More</label> 
+                    <div class="content">
+                        <section class="img-container">
+                            <div class="slider-wrapper3">
+                                <div class="slider3">
+                                    <img id="slide-1a" src="insu 1.jpg" alt="3D rendered base of the Insulin Pen Protective and Portable Case">
+                                    <img id="slide-2a" src="insu 2.jpg" alt="3D rendered upper stand of the Insulin Pen Protective and Portable Case">
+                                    <img id="slide-3a" src="insu 3.jpg" alt="3D rendered lower stand of the Insulin Pen Protective and Portable Case">
+                                </div>
+                                <div class="slider-nav3">
+                                    <a href="#slide-1a"></a>
+                                    <a href="#slide-2a"></a>
+                                    <a href="#slide-3a"></a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <br>
+                    <div class="strip"></div>
+
+                    <li class="design">
+                        <img src="pot1.jpg">
+                        <h1>
+                            <span>Flower Pot</span>
+                        </h1>
+                        <P>A decorative yet functional flower pot designed with smooth organic curves and optimized water drainage. The pot was designed for printability without supports and to experiment with form aesthetics in interior objects.</P>
+                    </li>
+                    <input type="checkbox" id="check-4">
+                    <label for="check-4">Explore More</label> 
+                    <div class="content">
+                        <section class="img-container">
+                            <div class="slider-wrapper4">
+                                <div class="slider4">
+                                    <img id="slide-1b" src="pot1.jpg" alt="3D rendered base of the Flower Pot">
+                                    <img id="slide-2b" src="pot2.jpg" alt="3D rendered upper stand of the Flower Pot">
+                                    <img id="slide-3b" src="pot3.jpg" alt="3D rendered lower stand of the Flower Pot">
+                                    <img id="slide-4b" src="pot4.jpg" alt="3D rendered lower stand of the Flower Pot">
+                                </div>
+                                <div class="slider-nav4">
+                                    <a href="#slide-1b"></a>
+                                    <a href="#slide-2b"></a>
+                                    <a href="#slide-3b"></a>
+                                    <a href="#slide-4b"></a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <br>
+                    <div class="strip"></div>
+
+                </ul>
+            </div>
+    </section>
+
+<!-- 
+
+
+    <section id="buy">
+        <h1 class="title">Buy</h1>
+        <p>as sidv  iuds vsjoidn vsdo dv v</p>
+    </section>
+
+    ---->
+    <br><br><br><br><br><br>
+    <section id="contact">
+        <h1 class="title">Contact</h1>    <br><br>
+        <div class="containers">
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-envelope"></i>vidurvarshan1999@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+44 7436 205379</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/vidur-varshan-manoharan"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+    
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn2">Submit</button>
+                    </form>
+    
+                    <span id="msg"></span>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="design.js"></script>
+</body>
+</html>
